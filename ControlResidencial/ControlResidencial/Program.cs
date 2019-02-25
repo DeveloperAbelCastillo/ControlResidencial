@@ -22,6 +22,8 @@ namespace ControlResidencial
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+            //helper.Seguridad.Encripta("localhost");
+            helper.conexion.ObtenerCadenaConexion();
             Application.Run(new frmPrincipal());
         }
     }

@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BancosIngresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BancosEgresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ConciliacionIngresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ConciliacionEgresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ResidenciasRegistrar = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ResidenciasConsultar = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ResidenciasActualizar = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ResidenciasEliminar = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.MantenimientoOrdenesCompra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ReportesConciliacionIngresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ReportesConciliacioEgresos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ReportesGastos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ReportesMorosos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // accordionControl1
@@ -64,150 +65,163 @@
             this.accordionControlElement14});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(185, 278);
+            this.accordionControl1.Size = new System.Drawing.Size(168, 395);
             this.accordionControl1.TabIndex = 0;
             // 
             // accordionControlElement1
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement2,
-            this.accordionControlElement3});
+            this.BancosIngresos,
+            this.BancosEgresos});
+            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "Bancos";
             // 
-            // accordionControlElement2
+            // BancosIngresos
             // 
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "Ingresos";
+            this.BancosIngresos.Name = "BancosIngresos";
+            this.BancosIngresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BancosIngresos.Text = "Ingresos";
+            this.BancosIngresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement3
+            // BancosEgresos
             // 
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Egresos";
+            this.BancosEgresos.Name = "BancosEgresos";
+            this.BancosEgresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BancosEgresos.Text = "Egresos";
+            this.BancosEgresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
             // accordionControlElement4
             // 
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement5,
-            this.accordionControlElement6});
+            this.ConciliacionIngresos,
+            this.ConciliacionEgresos});
+            this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Conciliación";
             // 
-            // accordionControlElement5
+            // ConciliacionIngresos
             // 
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Ingresos";
+            this.ConciliacionIngresos.Name = "ConciliacionIngresos";
+            this.ConciliacionIngresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ConciliacionIngresos.Text = "Ingresos";
+            this.ConciliacionIngresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement6
+            // ConciliacionEgresos
             // 
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "Egresos";
+            this.ConciliacionEgresos.Name = "ConciliacionEgresos";
+            this.ConciliacionEgresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ConciliacionEgresos.Text = "Egresos";
+            this.ConciliacionEgresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
             // accordionControlElement7
             // 
             this.accordionControlElement7.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement9,
-            this.accordionControlElement10,
-            this.accordionControlElement11,
-            this.accordionControlElement12});
+            this.ResidenciasRegistrar,
+            this.ResidenciasConsultar,
+            this.ResidenciasActualizar,
+            this.ResidenciasEliminar});
+            this.accordionControlElement7.Expanded = true;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "Residencias";
             // 
-            // accordionControlElement9
+            // ResidenciasRegistrar
             // 
-            this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement9.Text = "Registrar";
+            this.ResidenciasRegistrar.Name = "ResidenciasRegistrar";
+            this.ResidenciasRegistrar.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ResidenciasRegistrar.Text = "Registrar";
+            this.ResidenciasRegistrar.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement10
+            // ResidenciasConsultar
             // 
-            this.accordionControlElement10.Name = "accordionControlElement10";
-            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement10.Text = "Consultar";
+            this.ResidenciasConsultar.Name = "ResidenciasConsultar";
+            this.ResidenciasConsultar.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ResidenciasConsultar.Text = "Consultar";
+            this.ResidenciasConsultar.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement11
+            // ResidenciasActualizar
             // 
-            this.accordionControlElement11.Name = "accordionControlElement11";
-            this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement11.Text = "Actualizar";
+            this.ResidenciasActualizar.Name = "ResidenciasActualizar";
+            this.ResidenciasActualizar.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ResidenciasActualizar.Text = "Actualizar";
+            this.ResidenciasActualizar.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement12
+            // ResidenciasEliminar
             // 
-            this.accordionControlElement12.Name = "accordionControlElement12";
-            this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement12.Text = "Eliminar";
+            this.ResidenciasEliminar.Name = "ResidenciasEliminar";
+            this.ResidenciasEliminar.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ResidenciasEliminar.Text = "Eliminar";
+            this.ResidenciasEliminar.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
             // accordionControlElement8
             // 
             this.accordionControlElement8.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement13});
+            this.MantenimientoOrdenesCompra});
+            this.accordionControlElement8.Expanded = true;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Text = "Mantenimiento";
             // 
-            // accordionControlElement13
+            // MantenimientoOrdenesCompra
             // 
-            this.accordionControlElement13.Name = "accordionControlElement13";
-            this.accordionControlElement13.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement13.Text = "Ordenes de compra";
+            this.MantenimientoOrdenesCompra.Name = "MantenimientoOrdenesCompra";
+            this.MantenimientoOrdenesCompra.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.MantenimientoOrdenesCompra.Text = "Ordenes de compra";
+            this.MantenimientoOrdenesCompra.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
             // accordionControlElement14
             // 
             this.accordionControlElement14.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement15,
-            this.accordionControlElement16,
-            this.accordionControlElement17,
-            this.accordionControlElement18});
+            this.ReportesConciliacionIngresos,
+            this.ReportesConciliacioEgresos,
+            this.ReportesGastos,
+            this.ReportesMorosos});
             this.accordionControlElement14.Expanded = true;
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Text = "Reportes";
             // 
-            // accordionControlElement15
+            // ReportesConciliacionIngresos
             // 
-            this.accordionControlElement15.Name = "accordionControlElement15";
-            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement15.Text = "Conciliacion de Ingresos";
+            this.ReportesConciliacionIngresos.Name = "ReportesConciliacionIngresos";
+            this.ReportesConciliacionIngresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ReportesConciliacionIngresos.Text = "Conciliacion de Ingresos";
+            this.ReportesConciliacionIngresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // groupControl1
+            // ReportesConciliacioEgresos
             // 
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(185, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(447, 278);
-            this.groupControl1.TabIndex = 1;
+            this.ReportesConciliacioEgresos.Name = "ReportesConciliacioEgresos";
+            this.ReportesConciliacioEgresos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ReportesConciliacioEgresos.Text = "Conciliacion de egresos";
+            this.ReportesConciliacioEgresos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement16
+            // ReportesGastos
             // 
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "Conciliacion de egresos";
+            this.ReportesGastos.Name = "ReportesGastos";
+            this.ReportesGastos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ReportesGastos.Text = "Gastos";
+            this.ReportesGastos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement17
+            // ReportesMorosos
             // 
-            this.accordionControlElement17.Name = "accordionControlElement17";
-            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement17.Text = "Gastos";
+            this.ReportesMorosos.Name = "ReportesMorosos";
+            this.ReportesMorosos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ReportesMorosos.Text = "Morosos";
+            this.ReportesMorosos.Click += new System.EventHandler(this.itemsMenu_Click);
             // 
-            // accordionControlElement18
+            // xtraTabbedMdiManager1
             // 
-            this.accordionControlElement18.Name = "accordionControlElement18";
-            this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement18.Text = "Morosos";
+            this.xtraTabbedMdiManager1.MdiParent = this;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 278);
-            this.Controls.Add(this.groupControl1);
+            this.ClientSize = new System.Drawing.Size(779, 395);
             this.Controls.Add(this.accordionControl1);
+            this.IsMdiContainer = true;
             this.Name = "frmPrincipal";
             this.Text = "Control Residencial";
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,24 +230,24 @@
 
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BancosIngresos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BancosEgresos;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ConciliacionIngresos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ConciliacionEgresos;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ResidenciasRegistrar;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ResidenciasConsultar;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ResidenciasActualizar;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ResidenciasEliminar;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement MantenimientoOrdenesCompra;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ReportesConciliacionIngresos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ReportesConciliacioEgresos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ReportesGastos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ReportesMorosos;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }
 
